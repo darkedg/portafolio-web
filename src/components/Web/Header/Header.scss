@@ -5,11 +5,10 @@
   width: 100%;
   object-fit: contain;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
-  &__name {
-    
+  &__name {    
     font-size: 24px;
     font-family: $font-family;
     font-weight: $font-weight-heavy;
@@ -56,6 +55,7 @@
   }
 
   @media all and (max-width: 900px) {
+    height: 120vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -74,5 +74,9 @@
         padding-right: 20px;
       }
     }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 90vh;
   }
 }

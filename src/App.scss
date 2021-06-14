@@ -18,3 +18,20 @@ body::-webkit-scrollbar-thumb {
   background-color: $color-primary;
 }
 
+.title {
+  margin-bottom: 40px;
+
+  h1 {
+    font-family: $font-family;
+    font-weight: $font-weight-heavy;
+    text-align: left;
+    font-size: 24px;
+    color: $color-tertiary;
+  }
+
+  .barra {
+    background-color: $color-primary;
+    height: 4px;
+    width: 60px;
+  }
+}

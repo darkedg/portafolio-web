@@ -1,0 +1,73 @@
+@import '../../../styles/index.scss';
+
+.about-container {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+
+    p {
+      color: $color-light;
+    }
+
+    @include movil {
+      font-size: 12px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include desktop {
+      font-size: 21px;
+    }
+  }
+
+  &__btn {
+    text-align: end;
+    margin-top: 40px;
+
+    a {
+      background-color: $color-primary;
+      padding: 18px 30px 18px 30px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      scroll-behavior: auto;
+      color: $color-tertiary;
+      font-size: 21px;
+      font-weight: $font-weight-heavy;
+  
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-light;
+      }
+  
+      @include desktop {
+        height: 62px;
+        width: 32px;
+      }
+    }
+  }
+
+
+  @media all and (max-width: 900px) {
+    &__title {
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    height: 80vh;
+
+    &__btn {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
