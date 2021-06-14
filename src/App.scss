@@ -1,1 +1,20 @@
 @import './styles/index.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-track {
+  border: 1px solid $color-secondary;
+  background-color: $color-secondary;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: $color-secondary;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+}
+

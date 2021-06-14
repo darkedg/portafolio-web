@@ -1,21 +1,33 @@
+import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router';
-import { Col, Layout, Row } from 'antd';
+import { Layout } from 'antd';
+
+// Components
+import Navbar from '../components/Web/Navbar';
 
 const LayoutBasic = (props) => {
   const { routes } = props;
+  const { Footer } = Layout;
+
+  const [scrollHeight, setScrollHeight] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollHeight(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, [scrollHeight]);
 
   return (
-    <Layout>
-      <Row>
-        <Col>
-          Menu Navbar
-        </Col>
-      </Row>
+    <>
+      <Navbar isScrolling={scrollHeight} />
       <LoadRoutes routes={routes} />
-      <footer>
+      <Footer>
         Footer
-      </footer>
-    </Layout>
+      </Footer>
+    </>
   );
 };
 
