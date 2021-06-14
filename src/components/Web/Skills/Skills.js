@@ -5,7 +5,7 @@ import './Skills.scss';
 
 const Skills = () => {
   return (
-    <div className="skills-container" id="skills">
+    <div className="skills-container container" id="skills">
       <div className="title">
         <h1>{data.skills.title}</h1>
         <div className="barra"></div>

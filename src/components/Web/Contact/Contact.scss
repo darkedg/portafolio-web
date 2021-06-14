@@ -1,0 +1,81 @@
+@import '../../../styles/index.scss';
+
+.contact-container {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.6)
+  ), url('../../../assets/img/jpg/student.jpg') no-repeat center center;
+  background-size: cover;
+
+  &__todo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+
+    &-info {
+      width: 100%;
+      h1 {
+        color: $color-tertiary;
+      }
+      .icons {
+        &-ind {
+          display: flex;
+          .anticon {
+            color: $color-tertiary;
+            font-size: 30px;
+          }
+          p {
+            padding-left: 20px;
+            color: $color-light;
+            font-size: 18px;
+
+            span {
+              color: rgb(226, 219, 219);
+              font-size: 16px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+          }
+        }        
+      }
+
+    }
+  
+    &-form {
+      width: 100%;
+      h2 {
+        color: $color-tertiary;
+      }
+
+      p {
+        color: $color-tertiary;
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+    &__todo {
+      display: flex;
+      flex-direction: column;
+
+      &-info {
+        display: flex;
+        justify-content: center;
+      }
+
+      &-form {
+        padding-top: 40px;
+      }
+    }
+  }
+
+}
