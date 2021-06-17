@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { init } from 'ityped';
-import data from '../../../data';
 
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ header }) => {
+  const { img, imgPlaceholder, text, btnText,  } = header;
+
   const textRef = useRef();
 
   useEffect(() => {
@@ -20,12 +21,12 @@ const Header = () => {
     <div className="header-container">      
       <div className="header-container__name">
         <h1>
-          {data.header.text[0]}
+          {text[0]}
           <br />
-          {data.header.text[1]}
+          {text[1]}
         </h1>
         <h2>
-          {data.header.text[2]} <span ref={textRef}></span>
+          {text[2]} <span ref={textRef}></span>
         </h2>
         <br />
         <br />
@@ -34,10 +35,10 @@ const Header = () => {
           title="Ir a la sección 'Sobre Mí'"
           className="header-container__scroll"
           id="about"
-        >{data.header.btnText}</a>
+        >{btnText}</a>
       </div>
       <div className="header-container__img">
-        <img src={data.header.img} alt={data.header.imgPlaceholder} />
+        <img src={img} alt={imgPlaceholder} />
       </div>
     </div>
   );

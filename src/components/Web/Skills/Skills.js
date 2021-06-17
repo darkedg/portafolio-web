@@ -1,20 +1,22 @@
-import data from '../../../data';
 import Card from '../../Card';
 
 import './Skills.scss';
 
-const Skills = () => {
+const Skills = ({ skills }) => {
+  const { title, skill } = skills;
+
   return (
     <div className="skills-container container" id="skills">
       <div className="title">
-        <h1>{data.skills.title}</h1>
+        <h1>{title}</h1>
         <div className="barra"></div>
       </div>
-      {data.skills.skill.map((item) => {
+      {skill.map(item => {
+        const { _id, text, tecnol } = item;
         return (
-          <div key={item._id} className="skills-container__cards">
-            <h2>{item.text}</h2>
-            <Card item={item.tecnol} />
+          <div key={_id} className="skills-container__cards">
+            <h2>{text}</h2>
+            <Card tecnol={tecnol} />
           </div>
         )
       })}

@@ -55,10 +55,11 @@
   }
 
   @media all and (max-width: 900px) {
-    height: 120vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    margin-block-end: 60px;
+    margin-block-start: 60px;
 
     &__name {
       text-align: center;
@@ -77,6 +78,6 @@
   }
 
   @media screen and (max-width: 480px) {
-    height: 90vh;
+    height: 80vh;
   }
 }

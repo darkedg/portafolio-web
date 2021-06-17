@@ -1,14 +1,15 @@
 import './Card.scss';
 
-const Card = ({ item }) => {
+const Card = ({ tecnol }) => {
 
   return (
     <div className="card-container">
-      {item.map((data, index) => {
+      {tecnol.map((data, index) => {
+        const { logo, name } = data;        
         return (
           <div key={index} className="card-container__bar">
-            <img src={data.logo} alt={data.name} />
-            <p>{data.name}</p>
+            <img src={logo} alt={name} />
+            <p>{name}</p>
           </div>
         )
       })}

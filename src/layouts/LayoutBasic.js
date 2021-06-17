@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router';
-import { Layout } from 'antd';
 
 // Components
 import Navbar from '../components/Web/Navbar';
+import Footer from '../components/Web/Footer';
 
 const LayoutBasic = (props) => {
   const { routes } = props;
-  const { Footer } = Layout;
 
   const [scrollHeight, setScrollHeight] = useState(0);
 

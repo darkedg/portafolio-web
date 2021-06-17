@@ -1,5 +1,5 @@
 
-import { MailOutlined, PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import { MailOutlined, SendOutlined } from '@ant-design/icons';
 
 import './Contact.scss';
 
@@ -13,18 +13,18 @@ const Contact = () => {
       <div className="contact-container__todo container">
         <div className="contact-container__todo-info ">
           <div className="icons">
-            <a href="mailto:edgel.infor123@gmail.com" className="icons-ind" title="edgel.infor123@gmail.com">
-              <MailOutlined />
+            <div className="icons-ind">
+              <a href="mailto:edgel.infor123@gmail.com"  title="edgel.infor123@gmail.com">
+                <MailOutlined />
+              </a>
               <p>Correo electrónico: <br /><span>edgel.infor123@gmail.com</span></p>
-            </a>
-            <a href="tel:+59172570390" className="icons-ind" title="+591-72570390">
-              <PhoneOutlined />
-              <p>Teléfono <br /><span>591-72570390</span></p>
-            </a>
-            <a href="https://wa.link/xxdkp8" target="_blank" rel="noreferrer" className="icons-ind" title="Escribeme para ayudarte">
-              <WhatsAppOutlined />
-              <p>Whatsapp <br /><span>+59172570390</span></p>
-            </a>
+            </div>
+            <div className="icons-ind">
+              <a href="https://t.me/edgelmg" target="_blank" rel="noreferrer" title="Edgar">
+                <SendOutlined />
+              </a>
+              <p>Telegram <br /><span>@edgelmg</span></p>
+            </div>
           </div>
 
         </div>

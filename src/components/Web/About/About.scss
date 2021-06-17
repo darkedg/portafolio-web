@@ -1,20 +1,18 @@
 @import '../../../styles/index.scss';
 
 .about-container {
-  height: 100vh;
-  object-fit: contain;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   &__text {
-
     p {
       color: $color-light;
     }
 
     @include movil {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     @include tablet {
@@ -28,17 +26,17 @@
 
   &__btn {
     text-align: end;
-    margin-top: 40px;
+    padding-top: 40px;
+    font-weight: $font-weight-heavy;
 
     a {
       background-color: $color-primary;
       padding: 18px 30px 18px 30px;
       border-radius: 20px;
       text-transform: uppercase;
-      scroll-behavior: auto;
       color: $color-tertiary;
-      font-size: 21px;
-      font-weight: $font-weight-heavy;
+      font-size: 20px;
+      
   
       &:hover {
         background-color: $color-secondary;
@@ -53,15 +51,16 @@
   }
 
 
-  @media all and (max-width: 900px) {
-    &__title {
-      margin-top: 20px;
+  @media screen and (max-width: 768px) {
+    &__btn {
+      a {
+        font-size: 12px;
+      }
     }
   }
   
   @media screen and (max-width: 480px) {
-    height: 80vh;
-
+    height: 100vh;
     &__btn {
       a {
         font-size: 12px;
