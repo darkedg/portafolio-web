@@ -3,7 +3,7 @@ import LayoutBasic from '../layouts/LayoutBasic';
 
 // Pages
 import Home from '../pages/Home';
-import Project from '../pages/Project';
+import Projects from '../pages/Projects';
 
 // Other
 import Error404 from '../pages/Error404';
@@ -20,8 +20,8 @@ const routes = [
         exact: true
       },
       {
-        path: "/project",
-        component: Project,
+        path: "/projects",
+        component: Projects,
         exact: true
       },
       {

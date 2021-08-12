@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import data from '../../../data';
 
 import './Navbar.scss';
@@ -7,6 +7,7 @@ import './Navbar.scss';
 const Navbar = ({ isScrolling }) => {
 
   const [clicked, setClicked] = useState(false);
+  const { nav: { logo, links } } = data;
 
   const tothetop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -19,20 +20,20 @@ const Navbar = ({ isScrolling }) => {
   return (
     <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
       <div className="navbar__logo" onClick={tothetop}>
-        E
-        <span className="navbar__logo--span ">MG*</span>
+        <span className="navbar__logo--span ">&#60;&#47;&#62;{logo}</span>
       </div>
       <ul className={clicked ? "navbar__items active" : "navbar__items"}>
-        {data.nav.links.map(item => {
+        {links.map(item => {
+          const { _id, to, text } = item;
           return (
             <li
-              key={item._id}
+              key={_id}
               className="navbar__items--section connections"
               onClick={handleClick}
             >
-              <Link to={item.to} className="connections__link">
-                {item.text}
-              </Link>
+              <HashLink to={to} className="connections__link">
+                {text}
+              </HashLink>
             </li>
           )
         })}

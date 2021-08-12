@@ -1,5 +1,8 @@
 import header from '../assets/img/png/header.png';
 import cv from '../assets/documents/cv.png';
+import img0 from '../assets/img/png/img1.png';
+import img1 from '../assets/img/png/img2.png';
+import img2 from '../assets/img/png/img3.png';
 import html5 from '../assets/img/svg/html5.svg';
 import css3 from '../assets/img/svg/css3.svg';
 import bootstrap from '../assets/img/svg/bootstrap.svg';
@@ -29,11 +32,11 @@ const db = {
   nav: {
     logo: 'EMG',
     links: [
-      { _id: 2, text: 'Inicio', to: '' },
-      { _id: 3, text: 'Sobre Mí', to: '#about' },
-      { _id: 4, text: 'Habilidades', to: '#skills' },
-      { _id: 5, text: 'Projectos', to: 'project' },
-      { _id: 6, text: 'Contacto', to: '#contact' },
+      { _id: 2, text: 'Inicio', to: '/#header' },
+      { _id: 3, text: 'Sobre Mí', to: '/#about' },
+      { _id: 4, text: 'Habilidades', to: '/#skills' },
+      { _id: 5, text: 'Projectos', to: '/projects' },
+      { _id: 6, text: 'Contacto', to: '/#contact' },
     ]
   },
   header: {
@@ -105,7 +108,53 @@ const db = {
         ],
       },
     ]
-  }
+  },
+  projects: [
+    {
+      _id: '0',
+      name: 'Portafolio - Jaume',
+      desc: 'Este Projecto de Jaume es un portafolio realizado con HTML5, CSS3, Responsive, flexive',
+      img: img0,
+      prog: [
+        {des: 'HTML5'},
+        {des: 'CSS3'},
+        {des: 'FlexBox'}
+      ],
+      links: {
+        github: 'https://github.com/darkedg/portfolio-jaume',
+        demo: 'https://darkedg.github.io/portfolio-jaume/',
+      }
+    },
+    {
+      _id: '1',
+      name: 'Shopping Cart',
+      desc: "Este Projecto es una tienda de productos donde se podra añadir al carrito de compras, esta realizado con React y Sass",
+      img: img1,
+      prog: [
+        {des: 'React'},
+        {des: 'Sass'}
+      ],
+      links: {
+        github: 'https://github.com/darkedg/shopping-cart-react',
+        demo: 'https://darkedg.github.io/shopping-cart-react/',
+      }
+    },
+    {
+      _id: '2',
+      name: 'Portafolio - Edgar',
+      desc: "Este Projecto esta realizado con React, Sass y Responsive",
+      img: img2,
+      prog: [
+        {des: 'React'},
+        {des: 'Sass'},
+        {des: 'Responsive'}
+      ],
+      links: {
+        github: 'https://github.com/darkedg',
+        demo: 'https://darkedg.github.io/portfolio-jaume/',
+      }
+    }
+  ]
 }
 
 export default db;

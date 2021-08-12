@@ -1,0 +1,196 @@
+@import '../../../styles/index.scss';
+
+.project-container {
+  height: 100vh;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -- Projects -- */
+.projects {
+  padding: 8rem 0;
+}
+/* Card */
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  padding: 0.5rem 0;
+  background-color: $color-secondary;
+  margin-top: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  // Card-image
+  & .card-image {
+    width: 60%;
+    object-fit: cover;
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    transition: ease 0.5s;
+    transition: transform .6s;
+  }
+
+  // Card-image - Media Query
+  @media screen and (min-width: 1024px) {
+    &:hover .card-image {
+      background-size: 170% 110%;
+      transform: translateX(10px)
+    }
+  }
+
+  /* Card-body */
+  & .card-body {
+    color: $color-primary;
+    width: 40%;
+    padding: 2rem;
+    transition: ease 0.5s;
+    text-align: center;
+
+    & h2 {
+      // width: 290px;
+      color: $color-tertiary;
+      font-size: 24px;  
+    }
+
+    & .progres {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      & p {
+        background: $color-palePink;
+        padding: 4px 10px;
+        width: 80px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 5px;
+      }
+    }
+
+    & p {
+      // width: 290px;
+      color: $color-light;
+    }
+
+    & .login-projects {
+      line-height: 1rem;
+    }
+
+    & .bold {
+      margin: 1rem 0;
+    }
+
+    & .comp {
+      margin-top: 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      & a,
+      & a:visited {
+        background-color: $color-primary;
+        padding: 0.8rem 3rem;
+        margin-right: 2rem;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      & a:last-child {
+        margin-right: 0;
+      }
+
+      & a:hover {
+        background-color: $color-dark-web;
+        color: #fff;
+      }
+    }
+  }
+  // Card-body - Media Queries
+  @media screen and (min-width: 768px) {
+    &:hover .card-body {
+      padding-left: 1.5rem;
+      width: 60%;
+    }
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  .responsive-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* -- Projects -- */
+  .info-profile {
+    margin-left: 0;
+  }
+
+  /* Card */
+  .card {
+    height: 700px;
+    padding: 0;
+    justify-content: flex-start;
+
+    /* Card-image */
+    & .card-image {
+      width: 100%;
+      // height: 45%;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+      background-size: 200%;
+    }
+
+    /* Card-body */
+    & .card-body {
+      width: 80%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      text-align: center;
+      margin-top: 30px;
+
+      & p,
+      & h2 {
+        width: 100%;
+      }
+
+      & .comp {
+
+        & a {
+          width: 100%;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: 620px;
+  }
+
+  & .comp {
+    display: flex;
+    flex-direction: column;
+  }
+}

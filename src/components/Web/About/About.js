@@ -5,7 +5,7 @@ const About = ({ about }) => {
   const { title, desc, btnText, cv } = about;
 
   return (
-    <div className="about-container container">
+    <div className="about-container container" id="about">
       <div className="title">
         <h1>{title}</h1>
         <div className="barra"></div>

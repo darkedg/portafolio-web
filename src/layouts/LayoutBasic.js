@@ -23,9 +23,7 @@ const LayoutBasic = (props) => {
     <>
       <Navbar isScrolling={scrollHeight} />
       <LoadRoutes routes={routes} />
-      <Footer>
-        Footer
-      </Footer>
+      <Footer />
     </>
   );
 };

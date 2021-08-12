@@ -18,7 +18,7 @@ const Header = ({ header }) => {
   }, []);
 
   return (
-    <div className="header-container">      
+    <div className="header-container" id="header">      
       <div className="header-container__name">
         <h1>
           {text[0]}
