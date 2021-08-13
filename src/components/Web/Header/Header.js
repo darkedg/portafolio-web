@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { init } from 'ityped';
+import { HashLink } from 'react-router-hash-link';
 
 import './Header.scss';
 
@@ -35,7 +36,7 @@ const Header = ({ header }) => {
           title="Ir a la sección 'Sobre Mí'"
           className="header-container__scroll"
           id="about"
-        >{btnText}</a>
+        ><HashLink to="/#about" className="connections__link">{btnText}</HashLink></a>
       </div>
       <div className="header-container__img">
         <img src={img} alt={imgPlaceholder} />

@@ -151,8 +151,8 @@ const db = {
         {des: 'Responsive'}
       ],
       links: {
-        github: 'https://github.com/darkedg',
-        demo: 'https://darkedg.github.io/portfolio-jaume/',
+        github: 'https://github.com/darkedg/portafolio-web',
+        demo: 'https://darkedg.github.io/portafolio-web/',
       }
     }
   ]
