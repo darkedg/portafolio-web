@@ -33,6 +33,17 @@
     &--span {
       color: $color-light;
     }
+    
+    img {
+      width: 230px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    &__logo {
+      img {
+        width: 200px;
+      }
+    }
   }
 
   &__items {

@@ -13,7 +13,7 @@ const Header = ({ header }) => {
       showCursor: true,
       backDelay: 2000,
       backSpeed: 60,
-      strings: ["Front End Developer", "Diseñador Web", "Programador Móvil"],
+      strings: ["Front End Developer", "Diseñador Web"],
     });
   }, []);
 

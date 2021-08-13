@@ -1,3 +1,4 @@
+import logo from '../assets/img/png/logo-cuadrado2.png';
 import header from '../assets/img/png/header.png';
 import cv from '../assets/documents/cv.png';
 import img0 from '../assets/img/png/img1.png';
@@ -30,7 +31,7 @@ import adobeillustrator from '../assets/img/svg/adobeillustrator.svg';
 
 const db = {
   nav: {
-    logo: 'EMG',
+    logo: logo,
     links: [
       { _id: 2, text: 'Inicio', to: '/#header' },
       { _id: 3, text: 'Sobre Mí', to: '/#about' },

@@ -20,7 +20,7 @@ const Navbar = ({ isScrolling }) => {
   return (
     <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
       <div className="navbar__logo" onClick={tothetop}>
-        <span className="navbar__logo--span ">&#60;&#47;&#62;{logo}</span>
+        <span className="navbar__logo--span "><img src={logo} alt="logo" /></span>
       </div>
       <ul className={clicked ? "navbar__items active" : "navbar__items"}>
         {links.map(item => {

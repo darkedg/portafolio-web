@@ -1,7 +1,6 @@
 import './Project.scss';
 
 const Project = ({ projects }) => {
-  console.log(projects);
   
   return (
     <div className="projects container">

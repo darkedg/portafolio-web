@@ -32,6 +32,7 @@
   // Card-image
   & .card-image {
     width: 60%;
+    text-align: start;
     object-fit: cover;
     background-size: 150% 100%;
     background-repeat: no-repeat;
@@ -46,7 +47,8 @@
   @media screen and (min-width: 1024px) {
     &:hover .card-image {
       background-size: 170% 110%;
-      transform: translateX(10px)
+      transform: translateX(10px);
+      transition: ease 0.5s;
     }
   }
 
@@ -56,6 +58,7 @@
     width: 40%;
     padding: 2rem;
     transition: ease 0.5s;
+    transform: scale(1);
     text-align: center;
 
     & h2 {
@@ -118,12 +121,9 @@
       }
     }
   }
-  // Card-body - Media Queries
-  @media screen and (min-width: 768px) {
-    &:hover .card-body {
-      padding-left: 1.5rem;
-      width: 60%;
-    }
+  &:hover .card-body {
+    transform: scale(1.05);
+    transition: ease 0.5s;
   }
 }
 
