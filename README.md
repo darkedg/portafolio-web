@@ -5,3 +5,7 @@ Este proyecto es un portafolio web responsive donde podre recopilar todos mis pr
 ## Creación de la aplicación
 
 La aplicación se realicio con React, Sass y otros.
+
+<div align="center">
+<img width="200px" src="https://raw.githubusercontent.com/darkedg/portafolio-web/main/src/assets/img/png/img3.png" />
+</div>
