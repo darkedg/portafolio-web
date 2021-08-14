@@ -1,0 +1,52 @@
+@import '../../../styles/index.scss';
+
+.error {
+  padding: 8rem 0;
+  text-align: center;
+
+  h1 {
+    color: $color-tertiary;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & a {
+    background: $color-primary;
+    color: $color-tertiary;
+    font-size: 21px;
+    font-weight: $font-weight-heavy;
+    padding: 18px 30px;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-light;
+    }
+  }
+
+  & p {
+    margin-bottom: 50px;
+    color: $color-tertiary;
+    font-size: 18px;
+  }
+
+  @media all and (max-width: 900px) {
+    &__img {
+      width: 300px;
+    }
+    & a {
+      font-size: 1rem;
+    }
+  }
+}

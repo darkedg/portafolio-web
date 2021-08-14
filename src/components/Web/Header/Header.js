@@ -31,12 +31,12 @@ const Header = ({ header }) => {
         </h2>
         <br />
         <br />
-        <a
-          href="#about"
+        <HashLink
+          to="/#about"
           title="Ir a la sección 'Sobre Mí'"
           className="header-container__scroll"
           id="about"
-        ><HashLink to="/#about" className="connections__link">{btnText}</HashLink></a>
+        >{btnText}</HashLink>
       </div>
       <div className="header-container__img">
         <img src={img} alt={imgPlaceholder} />
