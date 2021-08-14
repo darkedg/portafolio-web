@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portafolio-web/static/css/main.e3f0a69e.chunk.css",
-    "main.js": "/portafolio-web/static/js/main.84db0c23.chunk.js",
-    "main.js.map": "/portafolio-web/static/js/main.84db0c23.chunk.js.map",
+    "main.js": "/portafolio-web/static/js/main.698f603f.chunk.js",
+    "main.js.map": "/portafolio-web/static/js/main.698f603f.chunk.js.map",
     "runtime-main.js": "/portafolio-web/static/js/runtime-main.5d14f6dc.js",
     "runtime-main.js.map": "/portafolio-web/static/js/runtime-main.5d14f6dc.js.map",
     "static/css/2.c5b6f512.chunk.css": "/portafolio-web/static/css/2.c5b6f512.chunk.css",
@@ -31,6 +31,7 @@
     "static/media/img1.9e178426.png": "/portafolio-web/static/media/img1.9e178426.png",
     "static/media/img2.99cfc4bf.png": "/portafolio-web/static/media/img2.99cfc4bf.png",
     "static/media/img3.79cd8d0b.png": "/portafolio-web/static/media/img3.79cd8d0b.png",
+    "static/media/img4.07a083ee.png": "/portafolio-web/static/media/img4.07a083ee.png",
     "static/media/java.b4a0adbd.svg": "/portafolio-web/static/media/java.b4a0adbd.svg",
     "static/media/javascript.90384b2d.svg": "/portafolio-web/static/media/javascript.90384b2d.svg",
     "static/media/laravel.ba995bd4.svg": "/portafolio-web/static/media/laravel.ba995bd4.svg",
@@ -52,6 +53,6 @@
     "static/css/2.c5b6f512.chunk.css",
     "static/js/2.bdca505a.chunk.js",
     "static/css/main.e3f0a69e.chunk.css",
-    "static/js/main.84db0c23.chunk.js"
+    "static/js/main.698f603f.chunk.js"
   ]
 }
