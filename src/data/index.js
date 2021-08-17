@@ -1,9 +1,11 @@
 import logo from '../assets/img/png/logo-cuadrado2.png';
 import header from '../assets/img/png/header.png';
 import cv from '../assets/documents/cv.png';
-import img0 from '../assets/img/png/img1.png';
-import img1 from '../assets/img/png/img2.png';
-import img2 from '../assets/img/png/img3.png';
+import img1 from '../assets/img/png/img1.png';
+import img2 from '../assets/img/png/img2.png';
+import img3 from '../assets/img/png/img3.png';
+import img4 from '../assets/img/png/img4.png';
+import img5 from '../assets/img/png/img5.png';
 import html5 from '../assets/img/svg/html5.svg';
 import css3 from '../assets/img/svg/css3.svg';
 import bootstrap from '../assets/img/svg/bootstrap.svg';
@@ -50,7 +52,7 @@ const db = {
     title: 'Sobre Mí',
     desc: [
       { text: 'Hola. ¿Qué tal?' },
-      { text: 'Mi nombre es Edgar, soy egresado en Informática de la Universidad Mayor de San Andres y actualmente me dedico a tiempo completo como Desarrollador Front End Jr. de forma remota.' },
+      { text: 'Mi nombre es Edgar, soy diseñador y desarrollador Web, actualmente me dedico a tiempo completo como Front End Developer de forma remota.' },
       { text: 'Soy una persona autodidacta, proactivo, organizado, que constantemente me dedico a aprender nuevas tecnologías y herramientas para asumir responsabilidades en diferentes areas laborales adquiriendo nuevos conocimientos.' },
       { text: 'Tambien tengo conocimiento necesarios en Back End.' }
     ],
@@ -115,7 +117,7 @@ const db = {
       _id: '0',
       name: 'Portafolio - Jaume',
       desc: 'Este Projecto de Jaume es un portafolio realizado con HTML5, CSS3, Responsive, flexive',
-      img: img0,
+      img: img1,
       prog: [
         {des: 'HTML5'},
         {des: 'CSS3'},
@@ -130,7 +132,7 @@ const db = {
       _id: '1',
       name: 'Shopping Cart',
       desc: "Este Projecto es una tienda de productos donde se podra añadir al carrito de compras, esta realizado con React y Sass",
-      img: img1,
+      img: img2,
       prog: [
         {des: 'React'},
         {des: 'Sass'}
@@ -144,7 +146,7 @@ const db = {
       _id: '2',
       name: 'Portafolio - Edgar',
       desc: "Este Projecto esta realizado con React, Sass y Responsive",
-      img: img2,
+      img: img3,
       prog: [
         {des: 'React'},
         {des: 'Sass'},
@@ -153,6 +155,33 @@ const db = {
       links: {
         github: 'https://github.com/darkedg/portafolio-web',
         demo: 'https://darkedg.github.io/portafolio-web/',
+      }
+    },
+    {
+      _id: '3',
+      name: 'Convertidor Moneda',
+      desc: "Es un Projecto de conversor de divisas, hecho con angular y bootstrap",
+      img: img4,
+      prog: [
+        {des: 'Angular'},
+        {des: 'Bootstrap'}
+      ],
+      links: {
+        demo: 'https://convertidor-coin.netlify.app/'
+      }
+    },
+    {
+      _id: '4',
+      name: 'Cuestionario de JavaScript',
+      desc: "Proyecto de preguntas y respuestas de JavaScript.",
+      img: img5,
+      prog: [
+        {des: 'Angular'},
+        {des: 'Bootstrap'}
+      ],
+      links: {
+        github: 'https://github.com/darkedg/preguntas-js',
+        demo: 'https://preguntas-js.netlify.app/'
       }
     }
   ]

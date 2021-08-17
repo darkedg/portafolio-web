@@ -26,13 +26,16 @@ const Project = ({ projects }) => {
                 ))}
               </div>
               <nav className="comp">
-                <a
-                  href={links.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
+                {links.github ? 
+                  <a
+                    href={links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                  : null
+                }
                 <a
                   href={links.demo}
                   target="_blank"
